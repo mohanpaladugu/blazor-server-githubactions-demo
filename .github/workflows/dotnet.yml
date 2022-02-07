@@ -3,8 +3,6 @@ name: .NET Core Build & Deployment
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 env:
   PUBLISH_PATH: '.'
   AZURE_WEB_APP: 'blazorsvr-ga-demo'
