@@ -4,9 +4,6 @@ on:
   push:
     branches: [ main ]
   
-env:
-  PUBLISH_PATH: '.'
-  AZURE_WEB_APP: 'blazorsvr-ga-demo'
     
 jobs:
   build:
@@ -19,8 +16,8 @@ jobs:
     - name: Variable Substitution
     - uses: microsoft/variable-substitution@v1
       with:
-        files: 'appsettings.json'
-    env:
-        Default: MyInformation
-        Microsoft: errors
+          files: 'appsettings.json'
+      env:
+         Default: MyInformation
+         Microsoft: errors
     
