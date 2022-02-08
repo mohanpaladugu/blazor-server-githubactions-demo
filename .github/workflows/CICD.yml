@@ -1,8 +1,6 @@
 name: Json variables substitution
 
-on:
-  push:
-    branches: [ main ]
+on: [push]
   
     
 jobs:
@@ -11,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2 
-    
-    - name: Variable Substitution
+    - uses: actions/checkout@v2
     - uses: microsoft/variable-substitution@v1
       with:
           files: 'appsettings.json'
