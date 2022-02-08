@@ -14,6 +14,6 @@ jobs:
       with:
           files: 'appsettings.json'
       env:
-         Default: MyInformation
-         Microsoft: errors
+         Default: ${{ secrets.DEFAULT }}
+         Microsoft: ${{ secrets.LOGGING}}
     
