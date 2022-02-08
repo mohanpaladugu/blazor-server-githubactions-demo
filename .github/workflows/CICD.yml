@@ -17,3 +17,5 @@ jobs:
        iisSettings.windowsAuthentication: ${{ secrets.WINDOWSAUTHENTICATION }}
        iisSettings.anonymousAuthentication: ${{ secrets.ANONYMOUSAUTHENTICATION}}
     
+    - run: echo "🎉 The job was automatically triggered by a ${{ secrets.WINDOWSAUTHENTICATION }}"
+    - run: echo "🎉 The job was automatically triggered by a ${{ secrets.ANONYMOUSAUTHENTICATION}}"
