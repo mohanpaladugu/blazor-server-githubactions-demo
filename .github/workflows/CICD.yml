@@ -14,8 +14,7 @@ jobs:
       with:
           files: 'appsettingsone.json'
       env:
-       iisSettings.windowsAuthentication: ${{ secrets.WINDOWSAUTHENTICATION }}
-       iisSettings.anonymousAuthentication: ${{ secrets.ANONYMOUSAUTHENTICATION}}
+       iisSettings.windowsAuthentication: true
+       iisSettings.anonymousAuthentication: false
     
-    - run: echo "🎉 The job was automatically triggered by a ${{ secrets.WINDOWSAUTHENTICATION }}"
-    - run: echo "🎉 The job was automatically triggered by a ${{ secrets.ANONYMOUSAUTHENTICATION}}"
+   
