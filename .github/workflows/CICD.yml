@@ -1,4 +1,4 @@
-name: Json variables substitution
+name: Json variables substitution workflow
 
 on: [push]
   
