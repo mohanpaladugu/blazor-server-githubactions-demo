@@ -27,7 +27,7 @@ jobs:
     - name: App Settings Variable Substitution
       uses: microsoft/variable-substitution@v1
       with:
-          files: '${{env.PUBLISH_PATH}}/publish/appsettingsone.json'
+          files: '/home/runner/work/blazor-server-githubactions-demo/blazor-server-githubactions-demo/publish/appsettingsone.json'
       env:
        iisSettings.windowsAuthentication: ${{ secrets.WINDOWSAUTHENTICATION }}
        iisSettings.anonymousAuthentication: ${{ secrets.ANONYMOUSAUTHENTICATION }}
