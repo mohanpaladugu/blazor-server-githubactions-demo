@@ -16,5 +16,5 @@ jobs:
       env:
        iisSettings.windowsAuthentication: ${{ secrets.WINDOWSAUTHENTICATION }}
        iisSettings.anonymousAuthentication: ${{ secrets.ANONYMOUSAUTHENTICATION }}
-       iisExpress.applicationUrl: ${{ secrets.APPLICATIONURL }}
-       iisExpress.sslPort: ${{ secrets.SSLPORT }}
+       iisSettings.iisExpress.applicationUrl: ${{ secrets.APPLICATIONURL }}
+       iisSettings.iisExpress.sslPort: ${{ secrets.SSLPORT }}
