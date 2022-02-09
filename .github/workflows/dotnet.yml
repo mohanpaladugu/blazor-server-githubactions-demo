@@ -1,4 +1,4 @@
-name: .NET Core Build & Deployment2
+name: .NET Core Build
 
 on:
   push:
