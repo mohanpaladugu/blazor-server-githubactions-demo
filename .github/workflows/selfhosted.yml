@@ -14,5 +14,5 @@ jobs:
       with:
           files: 'appsettingsone.json'
       env:
-       iisSettings.windowsAuthentication: true
-       iisSettings.anonymousAuthentication: false
+       iisSettings.windowsAuthentication: ${{ secrets.WINDOWSAUTHENTICATION }}
+       iisSettings.anonymousAuthentication: ${{ secrets.ANONYMOUSAUTHENTICATION }}
