@@ -26,7 +26,7 @@ jobs:
       run: dotnet publish --configuration Release -o '${{env.PUBLISH_PATH}}/publish'
     - uses: microsoft/variable-substitution@v1
       with:
-          files: 'appsettingsone.json'
+          files: '${{env.PUBLISH_PATH}}/publish/appsettingsone.json'
       env:
        iisSettings.windowsAuthentication: ${{ secrets.WINDOWSAUTHENTICATION }}
        iisSettings.anonymousAuthentication: ${{ secrets.ANONYMOUSAUTHENTICATION }}
