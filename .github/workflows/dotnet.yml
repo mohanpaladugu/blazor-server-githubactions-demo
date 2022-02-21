@@ -39,7 +39,7 @@ jobs:
       with:
         name: "appsettingsone.json"
         json: ${{ secrets.MY_JSON_REPLACE }}
-        dir: '/home/runner/work/blazor-server-githubactions-demo/blazor-server-githubactions-demo/publish/'
+        dir: './publish/'
    
     - name: Azure WebApp
       uses: Azure/webapps-deploy@v2
