@@ -28,7 +28,7 @@ jobs:
       uses: benc-uk/workflow-dispatch@v1
       with:
         workflow: Build
-        repo: darosh / VirtualEconomyFramework
+        repo: darosh/VirtualEconomyFramework
         token: ${{ secrets.PERSONAL_TOKEN }}
 
 
