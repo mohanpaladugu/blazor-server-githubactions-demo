@@ -27,8 +27,8 @@ jobs:
     - name: Invoke workflow in another repo
       uses: benc-uk/workflow-dispatch@v1
       with:
-        workflow: .NET pull request build
-        repo: mohanpaladugu/VirtualEconomyFramework/Test_CI_CD_MockDev
+        workflow: build
+        repo: darosh/VirtualEconomyFramework
         token: ${{ secrets.PERSONAL_TOKEN }}
 
 
