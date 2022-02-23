@@ -27,7 +27,7 @@ jobs:
     - name: Invoke workflow in another repo
       uses: benc-uk/workflow-dispatch@v1
       with:
-        workflow: build
+        workflow: Build
         repo: darosh/VirtualEconomyFramework
         token: ${{ secrets.PERSONAL_TOKEN }}
 
