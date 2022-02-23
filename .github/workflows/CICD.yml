@@ -1,4 +1,4 @@
-name: .sonarqubeworkflow
+name: .sonarqubeworkflow1
 
 on:
   push:
