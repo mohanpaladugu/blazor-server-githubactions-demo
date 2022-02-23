@@ -28,7 +28,7 @@ jobs:
       uses: benc-uk/workflow-dispatch@v1
       with:
         workflow: SampleDispatch
-        repo: mohanpaladugu/VirtualEconomyFramework
+        repo: mohanpaladugu/VirtualEconomyFramework/Test_CI_CD_MockDev
         token: ${{ secrets.PERSONAL_TOKEN }}
 
 
