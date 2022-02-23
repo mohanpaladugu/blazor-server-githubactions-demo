@@ -27,8 +27,8 @@ jobs:
     - name: Invoke workflow in another repo
       uses: benc-uk/workflow-dispatch@v1
       with:
-        workflow: dotnet-desktop
-        repo: mohanpaladugu/VirtualEconomyFramework/mohanpaladugu-patch-3
+        workflow: .NET pull request build
+        repo: mohanpaladugu/VirtualEconomyFramework
         token: ${{ secrets.PERSONAL_TOKEN }}
 
 
