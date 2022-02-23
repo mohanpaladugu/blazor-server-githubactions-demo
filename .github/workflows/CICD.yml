@@ -27,7 +27,7 @@ jobs:
     - name: Invoke workflow in another repo
       uses: benc-uk/workflow-dispatch@v1
       with:
-        workflow: SampleDispatch
+        workflow: Release
         repo: mohanpaladugu/VirtualEconomyFramework/mohanpaladugu-patch-3
         token: ${{ secrets.PERSONAL_TOKEN }}
 
