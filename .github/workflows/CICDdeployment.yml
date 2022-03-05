@@ -89,7 +89,6 @@ jobs:
        name: Production
        url: 'https://blazorsvr-ga-demoprod.azurewebsites.net'
       steps:
-          
        - name: Deploy to Azure Web App
          id: deploy-to-webapp
          uses: azure/webapps-deploy@v2
