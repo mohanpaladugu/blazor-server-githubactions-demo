@@ -6,7 +6,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - devblazorsvr-ga-demo
 on:
   push:
     branches:
-      - main
+      - main123
   workflow_dispatch:
 
 jobs:
