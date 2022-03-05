@@ -100,5 +100,5 @@ jobs:
          with:
           app-name: 'blazorsvr-ga-demoprod'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C97DF18DC76B4A259D6111A2B49DAF35 }}
+          publish-profile: ${{ secrets.AZURE_APP_PRODUCTION }}
           package: .        
