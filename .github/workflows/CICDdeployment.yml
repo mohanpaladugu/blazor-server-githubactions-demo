@@ -83,22 +83,16 @@ jobs:
   DeployProd:
 
       name: Deploy to Production 
-      if: github.event.ref == 'refs/heads/main
-      needs: [build]
+      needs: [DeployStaging]
       runs-on: ubuntu-latest
       environment: 
        name: Production
        url: 'https://blazorsvr-ga-demoprod.azurewebsites.net'
       steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: .net-app
-
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
+       - name: Deploy to Azure Web App
+         id: deploy-to-webapp
+         uses: azure/webapps-deploy@v2
+         with:
           app-name: 'blazorsvr-ga-demoprod'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C97DF18DC76B4A259D6111A2B49DAF35 }}
