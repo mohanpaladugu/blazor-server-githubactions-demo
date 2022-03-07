@@ -2,7 +2,7 @@ name: .sonarqubeworkflow1
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 #env:
 #  PUBLISH_PATH: '.'
 #  AZURE_WEB_APP: 'blazorsvr-ga-demo'
