@@ -40,7 +40,7 @@ jobs:
       runs-on: ubuntu-latest
       environment: 
        name: Development
-       url: 'https://devvenftappserver.azurewebsites.net'
+       url: 'http://devvenftappserver.azurewebsites.net'
       steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
