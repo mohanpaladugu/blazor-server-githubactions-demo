@@ -40,7 +40,7 @@ jobs:
       runs-on: ubuntu-latest
       environment: 
        name: Development
-       url: 'https://devblazorsvr-ga-demo.azurewebsites.net'
+       url: 'https://devvenftappserver.azurewebsites.net'
       steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'devblazorsvr-ga-demo'
+          app-name: 'devvenftappserver'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZURE_APP_PUBLISH_PROFILE_DEV }}
           package: . 
@@ -64,7 +64,7 @@ jobs:
       runs-on: ubuntu-latest
       environment: 
        name: Staging
-       url: 'https://blazorsvr-ga-demostaging.azurewebsites.net'
+       url: 'https://stagingvenftappserver.azurewebsites.net'
       steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
@@ -75,7 +75,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'blazorsvr-ga-demostaging'
+          app-name: 'stagingvenftappserver'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZURE_APP_PUBLISH_PROFILE_STAGING }}
           package: . 
@@ -87,7 +87,7 @@ jobs:
       runs-on: ubuntu-latest
       environment: 
        name: Production
-       url: 'https://blazorsvr-ga-demoprod.azurewebsites.net'
+       url: 'https://prodvenftappserver.azurewebsites.net'
       steps:
        - name: Download artifact from build job
          uses: actions/download-artifact@v2
@@ -98,7 +98,7 @@ jobs:
          id: deploy-to-webapp
          uses: azure/webapps-deploy@v2
          with:
-          app-name: 'blazorsvr-ga-demoprod'
+          app-name: 'prodvenftappserver'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZURE_APP_PUBLISH_PROFILE_PROD }}
           package: .        
