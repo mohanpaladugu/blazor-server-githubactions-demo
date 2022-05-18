@@ -2,9 +2,9 @@ name: Nuget Publish Package Build
 
 on:
   push:
-    branches: [ DocFX_TestBranch ]
+    branches: [ main ]
   pull_request:
-    branches: [ DocFX_TestBranch ]
+    branches: [ main ]
 jobs:
   build:
 
