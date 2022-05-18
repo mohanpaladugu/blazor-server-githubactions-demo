@@ -1,0 +1,29 @@
+name: Nuget Publish Package Build
+
+on:
+  push:
+    branches: [ DocFX_TestBranch ]
+  pull_request:
+    branches: [ DocFX_TestBranch ]
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.101'
+    
+   # - name: Install dependencies
+   #   run: dotnet restore  ./blazor-server-githubactions-demo.csproj
+   # - name: Build
+   #   run: dotnet build ./blazor-server-githubactions-demo.csproj --configuration Release --no-restore
+   
+    - name: Publish VEDriversLite
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+          PROJECT_FILE_PATH: ./blazor-server-githubactions-demo.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
