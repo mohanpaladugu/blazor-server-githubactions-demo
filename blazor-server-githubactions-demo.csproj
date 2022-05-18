@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>blazor_server_githubactions_demo</RootNamespace>
     <Version>0.0.1</Version>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
 </Project>
