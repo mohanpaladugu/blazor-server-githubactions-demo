@@ -21,9 +21,8 @@ jobs:
       run: dotnet restore  ./blazor-server-githubactions-demo.csproj
     - name: Build
       run: dotnet build ./blazor-server-githubactions-demo.csproj --configuration Release --no-restore
-   
-    - name: Publish blazor-server
-      uses: brandedoutcast/publish-nuget@v2.5.2
-      with:
-          PROJECT_FILE_PATH: ./blazor-server-githubactions-demo.csproj
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+       
+    - name: Pack nugets
+      run: dotnet pack ./blazor-server-githubactions-demo.csproj Release --no-build --output .
+    - name: Push to NuGet
+      run: dotnet nuget push nuget-packages/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
