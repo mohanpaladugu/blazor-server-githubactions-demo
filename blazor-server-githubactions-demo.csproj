@@ -5,6 +5,10 @@
     <RootNamespace>blazor_server_githubactions_demo</RootNamespace>
     <Version>0.0.5</Version>
     <IsPackable>true</IsPackable>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+  <ItemGroup>
+        <None Include=".\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>
