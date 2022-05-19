@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>blazor_server_githubactions_demo</RootNamespace>
-    <Version>0.0.5</Version>
+    <Version>0.0.6</Version>
     <IsPackable>true</IsPackable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
