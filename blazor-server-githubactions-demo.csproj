@@ -3,17 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>blazor_server_githubactions_demo</RootNamespace>
-    <Version>0.1.5</Version>
+    <Version>0.1.6</Version>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
   
    <PropertyGroup>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>readme.txt</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="docs\README.md">
-      <Pack>True</Pack>
+    <None Include="readme.txt">
+      <Pack>true</Pack>
       <PackagePath>.</PackagePath>
     </None>
   </ItemGroup>
