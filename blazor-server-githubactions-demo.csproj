@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>blazor_server_githubactions_demo</RootNamespace>
-    <Version>0.1.7</Version>
+    <Version>0.1.8</Version>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
   
@@ -14,7 +14,7 @@
   <ItemGroup>
     <None Include="readme.txt">
       <Pack>true</Pack>
-      <PackagePath>.</PackagePath>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
