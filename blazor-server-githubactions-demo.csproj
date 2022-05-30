@@ -14,7 +14,7 @@
   <ItemGroup>
     <None Include="docs\README.md">
       <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
+      <PackagePath>.</PackagePath>
     </None>
   </ItemGroup>
 
